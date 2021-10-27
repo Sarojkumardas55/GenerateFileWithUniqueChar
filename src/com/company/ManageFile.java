@@ -3,10 +3,11 @@ package com.company;
 import java.io.FileWriter;
 import java.io.IOException;
 
-public class ManageFile {
-    static GenerateString generate=new GenerateString();
-    static UserInput userInput=new UserInput();
+public class ManageFile implements StringInterface {
+
     public  void writeFile(int count){
+         GenerateString generate=new GenerateString();
+         UserInput userInput=new UserInput();
         count=userInput.getNumber();
         System.out.println("COUNT = "+count);
 
@@ -27,4 +28,16 @@ public class ManageFile {
         }
 
     }
+
+    @Override
+    public String generateString() {
+        return null;
+    }
+
+    @Override
+    public int getNumber() {
+        return 0;
+    }
+
+
 }

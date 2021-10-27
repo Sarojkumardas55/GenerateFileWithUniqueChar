@@ -25,4 +25,9 @@ public class UserInput implements StringInterface{
         return x;
         //return 0;
     }
+
+    @Override
+    public void writeFile(int x) {
+
+    }
 }

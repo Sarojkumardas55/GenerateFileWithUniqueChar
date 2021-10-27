@@ -1,16 +1,15 @@
 package com.company;
 
-
-
 public class Main {
 
     public static void main(String[] args) {
-        ManageFile manageFile=new ManageFile();
+
+        Factoryclass factoryclass=new Factoryclass();
+
+        StringInterface manageFile=factoryclass.getUser("MANAGEFILE");
         manageFile.writeFile(5);
 
 
-
     }
-
-    }
+}
 

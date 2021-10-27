@@ -25,4 +25,9 @@ public class GenerateString implements StringInterface{
     public int getNumber() {
         return 0;
     }
+
+    @Override
+    public void writeFile(int x) {
+
+    }
 }
